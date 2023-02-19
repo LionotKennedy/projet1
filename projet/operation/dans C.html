@@ -1,0 +1,94 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>dans C</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/dans_C.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+</style>
+</head>
+<body>
+	<div class="premier"><h1><em>Resolution d'une equation</em></h1>
+	<p>
+		Soit l'equation second degre suivant:</br> <strong>ax<sup>2</sup>+ bx + c = 0</strong> 
+	</p>
+	<p>
+		Donnez la valeur de <strong>a,b </strong>et <strong>c</strong>
+	</p></div>
+	<p>
+		<form name="output_from" class="reno">	
+		<div class="second">	a: <input type="text" size="15" name="a" required><strong>x<sup>2</sup></strong>+
+			b: <input type="text" size="15" name="b" required><strong>x+</strong>
+			c: <input type="text" size="15" name="c" required> = 0</br></br></div>
+			  <div><input type="button" onclick="fonction();" value="Solution"></div>
+		</form>
+		<div id="me" style="font-size: 25px"></div>
+		<div id="my" style="font-size: 25px"></div>
+		<div id="our" style="font-size: 25px"></div>
+		<div id="your" style="font-size: 25px"></div>
+		<div id="him" style="font-size: 25px"></div>
+		<div id="her" style="font-size: 25px"></div>
+		<section>
+		<div class="boutton1">
+			<a href="../Home.html" class="one1">Home</a>
+			<a href="dans C.html" class="two1">Try Again</a>
+		</div>
+	</section>
+		<script language="javascript">
+			
+			function fonction()
+			{
+				var a = document.forms["output_from"]["a"].value;
+				var b = document.forms["output_from"]["b"].value;
+				var c = document.forms["output_from"]["c"].value;
+
+				var D = ((b*b)-(4*a*c));
+
+				document.getElementById("me").innerHTML = "Delta = " +D; 
+				//alert ("nombre complexe");
+				if (D>0)
+				{
+					var x = (-b+Math.sqrt(D))/(2*a);
+
+					document.getElementById("my").innerHTML = "x1 = " +x;
+
+					var y =(-b-Math.sqrt(D))/(2*a);
+
+					document.getElementById("our").innerHTML = "x2 = " +y;
+
+				}
+				else if (D<0) 
+				{
+					var x1 = -b/(2*a);
+
+					var y1 = -(Math.sqrt(-D))/(2*a);
+
+					document.getElementById("your").innerHTML = "x1 =" +x1+ +y1+"i";
+
+					var x2 = -b/(2*a);
+
+					var y2 = (Math.sqrt(-D))/(2*a);
+
+					document.getElementById("him").innerHTML = "x2 = " +x2+ (y2==-y2?"-":"+")+y2+"i";
+				}
+				else
+				{
+					 var x3 = -b/(2*a);
+
+					 document.getElementById("her").innerHTML = "x1=x2 = " +x3; 
+				}
+			}
+
+			// function fonction()
+			// 
+				// if(D==NaN && x1=x2==NaN)
+				// {
+					// window.alert(" fo");
+				// }
+			// }
+		</script>
+	</p>
+</body>
+</html>

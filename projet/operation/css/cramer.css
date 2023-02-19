@@ -1,0 +1,94 @@
+	.keny input 
+	{
+       width: 10%;
+       height: 30px;
+       margin: 12px;
+       padding: 0px 0px;
+       text-align: center;
+       float: none;
+	}
+	h1
+	{
+		text-align: center;
+	}
+	div
+	{
+		text-align: center;
+	}
+	div input[type=button]:hover
+	{
+		background-color: black;
+		color: white;
+		box-shadow: 10px 10px 5px 2px #47484a;
+		font-size: 130%;
+        border-radius: 10%;
+        transition-duration: 0.5s;
+	}
+	div.second
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
+		font-size: 120%;
+	}
+	div.third
+	{
+		text-align: center;
+	}
+	div.third input[type=text]:hover
+	{
+		/*background-color: yellow;*/
+		box-shadow: 10px 10px 5px 2px #47484a;
+		border-radius: 10%;
+		border-style: solid;
+	}
+	div input[type=button]:active
+	{
+		background-color: white;
+		color: black;
+		font-size: 100%;	
+	}
+	 /*fait le 28/04/2022*/
+	.boutton a
+	{
+		text-decoration: none;
+		padding: 16px 32px;
+		margin: 4px 2px;
+		color: black;
+		border: 2px solid black; 
+		outline: none;
+		display: inline-block;
+		font-size: 16px;
+	    text-align: center;
+	    border-radius: 3px;
+	    transition-duration: 0.5s;
+	}
+	.boutton a:hover
+	{
+		background-color: black;
+		color: white;
+	}
+	a.one
+	{
+		float: left;
+		letter-spacing: 2px;
+	}
+	a.two
+	{
+		float: right;
+		letter-spacing: 2px;
+	}
+	div input[type=button]
+	{
+		cursor: pointer;
+		text-align: center;
+		border: 2px solid black;
+		border-radius: 4px;
+		background-color: white;
+		color: black;
+		/*letter-spacing: 0px;*/
+	}
+	.third
+	{
+		font-size: 25px;
+	}

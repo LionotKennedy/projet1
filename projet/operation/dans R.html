@@ -1,0 +1,74 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>dans R</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/dans_R.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+</style>
+</head>
+<body>
+	<div class="one"><h1><em>Resolution d'une equation</em></h1>
+	<p>
+		Soit l'equation second degre suivant:</br> <strong>ax<sup>2</sup>+ bx + c = 0</strong> 
+	</p>
+	<p>
+		Donnez la valeur de <strong>a,b </strong>et <strong>c</strong>
+	</p></div>
+	<p>
+		<form name="output_from" class="eka">
+		<div class="two">a: <input type="text" size="15" name="a" required><strong>x<sup>2</sup></strong>+
+			b: <input type="text" size="15" name="b" required><strong>x+</strong>
+			c: <input type="text" size="15" name="c" required> = 0</br></br></div>
+		     <div><input type="button" onclick="rozy();" value="Solution"></div>
+		</form>
+		<div id="I" style="font-size: 25px"></div>
+		<div id="you" style="font-size: 25px"></div>
+		<div id="he" style="font-size: 25px"></div>
+		<div id="she" style="font-size: 25px"></div>
+		<div id="it" style="font-size: 25px"></div>
+	<section>
+		<div class="boutton2">
+			<a href="../Home.html" class="one2">Home</a>
+			<a href="dans R.html" class="two2">Try Again</a>
+		</div>
+	</section>
+		<script language="javascript">
+			
+			function rozy()
+			{
+				var a = document.forms["output_from"]["a"].value;
+				var b = document.forms["output_from"]["b"].value;
+				var c = document.forms["output_from"]["c"].value;
+
+				var D = ((b*b)-(4*a*c));
+
+				document.getElementById("I").innerHTML = "Delta = " +D; 
+
+				if (D>0)
+				{
+					var x = (-b+Math.sqrt(D))/(2*a);
+
+					document.getElementById("you").innerHTML = "x1 = " +x;
+
+					var y =(-b-Math.sqrt(D))/(2*a);
+
+					document.getElementById("he").innerHTML = "x2 = " +y;
+
+				}
+				else if (D<0)
+				{
+					document.getElementById("she").innerHTML = " la solution est vide ";
+				}
+				else
+				{
+					var x3 = -b/(2*a);
+
+				     document.getElementById("it").innerHTML = "x1=x2 = " +x3;
+				}
+			}
+		</script>	   
+</body>
+</html>

@@ -1,0 +1,113 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>cramer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/cramer.css">
+<style type="text/css">
+<
+</style>
+</head>
+<body>
+	<div class="second"><p>
+		<h1><em>L'equation lineaire</em></h1>
+		Entrer la valuers des: <strong>a<sub>1</sub></strong> ,<strong>a<sub>2</sub></strong> ,<strong>a<sub>3</sub></strong> ,<strong>b<sub>1</sub></strong>, <strong>b<sub>2</sub><strong>, <strong>b<sub>3</sub><strong>, <strong>c<sub>1</sub><strong>, <strong>c<sub>2</sub><strong>, <strong>c<sub>3</sub></strong>, <strong>d<sub>1</sub></strong>, <strong>d<sub>2</sub></strong>, <strong>d<sub>3</sub></strong>;</br>
+	</p>
+	<p>
+		Avec l'equation lineaire s'ecrit comme:</br></br>
+		<strong>a<sub>1</sub><em>x</em>+b<sub>1</sub><em>y</em>+c<sub>1</sub><em>z</em>=d<sub>1</sub></strong></br>
+		<strong>a<sub>2</sub><em>x</em>+b<sub>2</sub><em>y</em>+c<sub>2</sub><em>z</em>=d<sub>2</sub></strong></br>
+		<strong>a<sub>3</sub><em>x</em>+b<sub>3</sub><em>y</em>+c<sub>3</sub><em>z</em>=d<sub>3</sub></strong></br></div>
+		<form name="input_from" class="keny">
+			<div class="third">a<sub>1</sub>: <input type="text" size="5" name="a1masaky" required>x+
+			b<sub>1</sub>: <input type="text" size="5" name="b1masaky" required>y+	
+			c<sub>1</sub>: <input type="text" size="5" name="c1masaky" required>z = d<sub>1</sub>: <input type="text" size="5" name="d1masaky" required></br>
+			a<sub>2</sub>: <input type="text" size="5" name="a2masaky" required>x+
+			b<sub>2</sub>: <input type="text" size="5" name="b2masaky" required>y+
+			c<sub>2</sub>: <input type="text" size="5" name="c2masaky" required>z = d<sub>2</sub>: <input type="text" size="5" name="d2masaky" required></br>
+			a<sub>3</sub>: <input type="text" size="5" name="a3masaky" required>x+
+			b<sub>3</sub>: <input type="text" size="5" name="b3masaky" required>y+
+			c<sub>3</sub>: <input type="text" size="5" name="c3masaky" required>z = d<sub>3</sub>: <input type="text" size="5" name="d3masaky" required></br></br></div>
+			<div><input type="button" onclick="result();" value="Solution"></div>
+		</form>
+	<div id="resultat" style="font-size: 25px"></div>
+	<div id="lambo" style="font-size: 25px"></div>
+	<div id="taboara" style="font-size: 25px"></div>
+	<div id="giseny" style="font-size: 25px"></div>
+	<div id="zaho" style="font-size: 25px"></div>
+	<div id="zahay" style="font-size: 25px"></div>
+	<div id="zareo" style="font-size: 25px"></div>
+	<section>
+		<div class="boutton">
+			<a href="../Home.html" class="one">Home</a>
+			<a href="cramer.html" class="two">Try Again</a>
+		</div>
+	</section>
+	<footer class="">
+	</footer>
+
+
+
+
+	<script language="javascript">
+	    //var a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3;
+		//var alert;
+
+		function result()
+		{    
+			//var a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3;
+		var	a1 = document.forms["input_from"]["a1masaky"].value;
+		var	b1 = document.forms["input_from"]["b1masaky"].value;
+		var	c1 = document.forms["input_from"]["c1masaky"].value;
+        var d1 = document.forms["input_from"]["d1masaky"].value;
+		var	a2 = document.forms["input_from"]["a2masaky"].value;
+		var	b2 = document.forms["input_from"]["b2masaky"].value;
+		var	c2 = document.forms["input_from"]["c2masaky"].value;
+        var d2 = document.forms["input_from"]["d2masaky"].value;
+		var	a3 = document.forms["input_from"]["a3masaky"].value;
+		var	b3 = document.forms["input_from"]["b3masaky"].value;
+		var	c3 = document.forms["input_from"]["c3masaky"].value;
+		var	d3 = document.forms["input_from"]["d3masaky"].value;
+
+		var P = (((a1*b2*c3)+(b1*c2*a3)+(c1*a2*b3))-((a3*b2*c1)+(b3*c2*a1)+(c3*a2*b1)));
+			//outputText = " la valeur de <strong>delta</strong> est Y";
+			//output the result 
+			//if (a1 == 0){
+			//	alert(" vazo lava , vondreo eeh  ");
+			
+				//var Y = (((a1*b2*c3)+(b1*c2*a3)+(c1*a2*b3))-((a3*b2*c1)+(b3*c2*a1)+(c3*a2*b1)));
+			//alert(" la valeur de <strong>delta</strong> est Y");
+			
+		    document.getElementById("resultat").innerHTML = "Delta = " +P;
+
+	    var X = (((d1*b2*c3)+(b1*c2*d3)+(c1*d2*b3))-((d3*b2*c1)+(b3*c2*d1)+(c3*d2*b1)));
+
+	        document.getElementById("lambo").innerHTML = "Delta(x) = " +X;
+
+	    var Y = (((a1*d2*c3)+(d1*c2*a3)+(c1*a2*d3))-((a3*d2*c1)+(d3*c2*a1)+(c3*a2*d1)));
+
+	        document.getElementById("taboara").innerHTML = "Delta(y) = " +Y;
+
+	    var Z = (((a1*b2*d3)+(b1*d2*a3)+(d1*a2*b3))-((a3*b2*d1)+(b3*d2*a1)+(d3*a2*b1)));
+
+	        document.getElementById("giseny").innerHTML = "Delta(z) = " +Z; 
+
+	    var x1 = X/P;
+
+	        document.getElementById("zaho").innerHTML = "x = " +x1; 
+
+	    var y1 = Y/P;
+
+	        document.getElementById("zahay").innerHTML = "y = " +y1;
+
+	    var z1 = Z/P;
+
+	        document.getElementById("zareo").innerHTML = "z = " +z1;
+
+
+
+		} 
+	</script>
+</body>
+</html>

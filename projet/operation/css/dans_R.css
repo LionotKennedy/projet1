@@ -1,0 +1,89 @@
+	.eka input 
+	{
+       width: 10%;
+       height: 30px;
+       margin: 12px;
+       padding: 0px 0px;
+       text-align: center;
+       float: none;
+	}
+	div.one
+	{
+		text-align: center;
+		font-size: 150%;
+		background-color: black;
+		color: white;
+	}
+	div.two
+	{
+		text-align: center;
+	}
+	div
+	{
+		text-align: center;
+	}
+	div input[type=button]:hover
+	{
+		background-color: black;
+		color: white;
+		box-shadow: 10px 10px 5px 2px #47484a;
+		font-size: 140%;
+        border-radius: 10%;
+        transition-duration: 0.5s;
+	}
+	div input[type=button]:active
+	{
+		background-color: white;
+		color: black;
+		font-size: 100%;
+	}
+	div.two input[type=text]:hover
+	{
+		box-shadow: 10px 10px 5px 2px #47484a;
+		border-radius: 10%;
+		border-style: solid;
+	}
+	 /*fait le 28/04/2022*/
+	.boutton2 a
+	{
+		text-decoration: none;
+		padding: 16px 32px;
+		margin: 4px 2px;
+		color: black;
+		border: 2px solid black; 
+		outline: none;
+		display: inline-block;
+		font-size: 16px;
+	    text-align: center;
+	    border-radius: 3px;
+	    transition-duration: 0.5s;
+	}
+	.boutton2 a:hover
+	{
+		background-color: black;
+		color: white;
+		/*padding: 20px 40px;*/
+	}
+	a.one2
+	{
+		float: left;
+		letter-spacing: 2px;
+	}
+	a.two2
+	{
+		float: right;
+		letter-spacing: 2px;
+	}
+	div input[type=button]
+	{
+		cursor: pointer;	
+		text-align: center;
+		background-color: white;
+		color: black;
+		border: 2px solid black;
+		border-radius: 4px;
+	}
+	.two
+	{
+		font-size: 25px;
+	}
